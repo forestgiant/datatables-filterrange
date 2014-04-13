@@ -30,7 +30,7 @@ $.fn.dataTableExt.oApi.fnFilterRange = function ( oSettings, sSearchStart, sSear
         "bRegex": bRegex,
         "bSmart": bSmart,
         "bCaseInsensitive": bCaseInsensitive,
-        "bRange": !!sSearchStart && !!sSearchEnd,
+        "bRange": !!sSearchStart || !!sSearchEnd,
         "sSearchStart": sSearchStart+"",
         "sSearchEnd": sSearchEnd+""
     } );
